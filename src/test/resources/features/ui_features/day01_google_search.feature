@@ -6,7 +6,7 @@ Feature: google_search_feature
   Given user navigates to google home page
   When user search for iphone
   Then verify page result contains iphone
-  Then close the application
+#  Then close the application
 
 #  HW add this step Then close the application and Complete the step definition
 

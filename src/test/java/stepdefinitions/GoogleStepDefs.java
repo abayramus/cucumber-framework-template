@@ -9,6 +9,8 @@ import pages.GoogleHomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+import static utilities.WaitUtils.waitFor;
+
 public class GoogleStepDefs {
 
     GoogleHomePage googleHomePage = new GoogleHomePage();
@@ -23,6 +25,7 @@ public class GoogleStepDefs {
     @Then("verify page result contains iphone")
     public void verify_page_result_contains_iphone() {
         String title = Driver.getDriver().getTitle();
+        waitFor(3);
         Assert.assertTrue(title.contains("iphone"));
     }
 
